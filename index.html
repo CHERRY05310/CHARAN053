@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeClick | Elite AI Threat Intelligence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-cyan: #22d3ee;
+      --accent-rose: #f43f5e;
+      --bg-slate: #020617;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s ease;
+      overflow-x: hidden;
+    }
+
+    /* Premium Theme Definitions */
+    .theme-cyber-dark {
+      background-color: #020617;
+      color: #f8fafc;
+    }
+    .theme-cyber-dark .cyber-card {
+      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid rgba(34, 211, 238, 0.08);
+      backdrop-filter: blur(24px);
+    }
+    .theme-cyber-dark .cyber-card:hover {
+      border-color: rgba(34, 211, 238, 0.2);
+      background: rgba(15, 23, 42, 0.5);
+    }
+
+    .theme-glass-frost {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      color: #0f172a;
+    }
+    .theme-glass-frost .cyber-card {
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    }
+
+    .theme-terminal {
+      background-color: #000;
+      color: #22c55e;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .theme-terminal .cyber-card {
+      background: #000;
+      border: 1px solid #166534;
+    }
+    .theme-terminal * { font-family: 'JetBrains Mono', monospace !important; }
+
+    .theme-pro-light {
+      background-color: #ffffff;
+      color: #0f172a;
+    }
+    .theme-pro-light .cyber-card {
+      background: #fdfdfd;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    }
+
+    /* Motion & Shimmer */
+    .shimmer {
+      background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.05), transparent);
+      background-size: 200% 100%;
+      animation: shimmer 2s infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    .cyber-glow {
+      box-shadow: 0 0 30px rgba(34, 211, 238, 0.1);
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #334155; }
+
+    /* Custom classes for high-end look */
+    .glass-nav {
+      background: rgba(2, 6, 23, 0.8);
+      backdrop-filter: blur(32px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.6; }
+    }
+    .animate-pulse-slow { animation: pulse-slow 4s ease-in-out infinite; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "@heroicons/react/": "https://esm.sh/@heroicons/react@^2.2.0/",
+    "framer-motion": "https://esm.sh/framer-motion@^11.11.11"
+  }
+}
+</script>
+</head>
+<body class="theme-cyber-dark antialiased">
+  <div id="root"></div>
+</body>
+</html>

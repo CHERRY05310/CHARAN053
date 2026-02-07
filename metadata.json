@@ -1,0 +1,8 @@
+{
+  "name": "SafeClick - Advanced Social Engineering Detection",
+  "description": "A comprehensive cybersecurity awareness and detection platform designed to protect users from phishing, scams, and social engineering attacks using AI-powered analysis and gamified education.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
